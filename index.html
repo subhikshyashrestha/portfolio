@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subhikshya Shrestha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <span class="nav-logo">Subhikshya Shrestha</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-text">
+
+    <p class="hero-small">Frontend Developer</p>
+
+    <h1>
+      Hi, I'm <span>Subhikshya Shrestha</span>
+    </h1>
+
+    <p class="hero-desc">
+      I enjoy building clean and responsive web applications using modern frontend technologies like React and Next.js.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+
+      <a href="#contact" class="btn-outline">
+        Contact Me
+      </a>
+    </div>
+
+  </div>
+
+  <div class="hero-image">
+    <img src="images/profile.jpg" alt="Subhikshya Shrestha">
+  </div>
+
+</section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-box">
+        <p>I'm a Frontend Developer with a strong foundation in React and Next.js, experienced in building responsive web applications and integrating APIs with Node.js and MongoDB.</p>
+        <p>I'm passionate about UI/UX quality, performance optimization, and collaborative development. I am also an active member of the IT Club, and have participated in events like Girls in ICT Day 2024 and Women in IT focused on women's empowerment in technology.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="technical">Technical</button>
+        <button class="tab-btn" data-tab="devops">DevOps</button>
+        <button class="tab-btn" data-tab="tools">Tools</button>
+        <button class="tab-btn" data-tab="soft">Soft Skills</button>
+      </div>
+      <div class="tab-content active" id="technical">
+        <div class="skill-grid">
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Next.js</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express.js</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">MongoDB</span>
+        </div>
+      </div>
+      <div class="tab-content" id="devops">
+        <div class="skill-grid">
+          <span class="skill-pill">Git / GitHub</span>
+          <span class="skill-pill">CI/CD (Basic)</span>
+          <span class="skill-pill">Linux</span>
+          <span class="skill-pill">Render</span>
+          <span class="skill-pill">Vercel</span>
+        </div>
+      </div>
+      <div class="tab-content" id="tools">
+        <div class="skill-grid">
+          <span class="skill-pill">VS Code</span>
+          <span class="skill-pill">Figma</span>
+          <span class="skill-pill">Trello</span>
+          <span class="skill-pill">Bitbucket</span>
+          <span class="skill-pill">Chrome DevTools</span>
+        </div>
+      </div>
+      <div class="tab-content" id="soft">
+        <div class="skill-grid">
+          <span class="skill-pill">Teamwork</span>
+          <span class="skill-pill">Communication</span>
+          <span class="skill-pill">Problem-Solving</span>
+          <span class="skill-pill">Presentation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="tl-date">Jul 2025 – Nov 2025</div>
+          <div class="tl-card">
+            <h3>Front-end Developer Intern</h3>
+            <span class="company">Alpinist Studios · Kathmandu, Nepal</span>
+            <ul>
+              <li>Built responsive interfaces with React and Next.js; developed reusable components and improved UI/UX consistency.</li>
+              <li>Collaborated with designers and backend developers; learned Git workflows and CI/CD deployment via Render and Vercel.</li>
+              <li>Debugged UI issues and optimized performance for client-facing applications.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <h3>Zupito</h3>
+          <p class="project-sub">Bicycle Ride-Sharing App</p>
+          <p class="project-desc">Built auth flows, OTP unlock, route handling, and dummy payment logic with input validation and state management.</p>
+          <div class="project-tags">
+            <span>Flutter</span><span>Tailwind CSS</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+          </div>
+          <div class="project-links">
+            <a href="https://zupito-frontend.onrender.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/subhikshyashrestha/backend-bicycle" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <h3>MDMS</h3>
+          <p class="project-sub">Mobile Device Management System</p>
+          <p class="project-desc">Device management dashboard with authentication, device tracking, and administrative controls.</p>
+          <div class="project-tags">
+            <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="https://mdms.soanitech.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <h3>HRM System</h3>
+          <p class="project-sub">Human Resource Management</p>
+          <p class="project-desc">Web-based HRM system with employee profiles, onboarding/offboarding workflows, and role-based access control.</p>
+          <div class="project-tags">
+            <span>Next.js</span><span>Node.js</span><span>MongoDB</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-list">
+        <div class="edu-card reveal">
+          <div class="edu-year">2022 – Present</div>
+          <div class="edu-info">
+            <h3>BSc.CSIT</h3>
+            <p>Sagarmatha College of Science and Technology, Sanepa, Lalitpur</p>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2019 – 2021</div>
+          <div class="edu-info">
+            <h3>+2 Science</h3>
+            <p>Ideal Model College, Dhobighat, Lalitpur</p>
+          </div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-year">2018</div>
+          <div class="edu-info">
+            <h3>SEE</h3>
+            <p>Nagarjuna Academy, Gusingal, Lalitpur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">Feel free to reach out for collaborations or just a hello!</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <span class="c-label">Email</span>
+              <a href="mailto:subhikshyashrestha@gmail.com">subhikshyashrestha@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <div>
+              <span class="c-label">GitHub</span>
+              <a href="https://github.com/subhikshyashrestha" target="_blank">github.com/subhikshyashrestha</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-linkedin"></i>
+            <div>
+              <span class="c-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/subhikshyashrestha" target="_blank">linkedin.com/in/subhikshyashrestha</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <span class="c-label">Location</span>
+              <span>Lalitpur, Nepal</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <input type="text" id="fname" placeholder="Your Name" required />
+          <input type="email" id="femail" placeholder="Your Email" required />
+          <textarea id="fmsg" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p class="form-success" id="formSuccess">✅ Message sent! Thank you.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Subhikshya Shrestha · Nepal 🇳🇵</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
